@@ -4,7 +4,7 @@ MAINTAINER LEE <norelay@lihaixin.name>
 
 ARG BUILD_PKG="tar gcc git curl expat libssh2 pcre libc-dev readline-dev zlib-dev openssl-dev ncurses-dev make"
 ARG TEMP_DIR="/tmp/softethervpn"
-ARG VERSION=4.24-9652-beta
+ARG VERSION=4.24-9656-beta
 
 LABEL description="SoftEtherVPN Server"
 LABEL version="${VERSION}"
