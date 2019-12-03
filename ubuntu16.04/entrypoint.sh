@@ -9,6 +9,7 @@ tail -F /usr/local/vpnserver/*_log/*.log &
 sleep 2
 
 /sbin/ip address add 172.16.0.1/24 brd + dev tap_default
+ifconfig tap_default mtu $MTU
 sleep 2
 iptables -t nat -D POSTROUTING -s 172.16.0.0/24 -j MASQUERADE
 #iptables -t mangle -D FORWARD -p tcp --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
