@@ -3,7 +3,7 @@ MAINTAINER Haixin Lee <docker@lihaixin.name>
 
 #ENV VERSION v4.22-9634-beta-2016.11.27
 ENV VERSION v4.30-9696-beta-2019.07.08
-ENV MTU=1300
+ENV MTU=1200
 WORKDIR /usr/local/vpnserver
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
